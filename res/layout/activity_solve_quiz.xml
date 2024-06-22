@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/snow"
+    android:weightSum="5">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Solve Question"
+        android:layout_margin="15dp"
+        android:textColor="#000"
+        android:drawableRight="@drawable/qusetionmarks"
+        android:background="@drawable/button_background_white"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="15dp"
+
+            >
+            <TextView
+                android:id="@+id/question_content_in_solve_quze"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="The Question "
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#000"
+                android:background="@drawable/button_background_black"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:weightSum="3"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/choose_one__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="answer 1"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:weightSum="3"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+
+                >
+                <TextView
+                    android:id="@+id/choose_two__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:text="answer 2"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:weightSum="3"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:id="@+id/choose_three__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:text="answer 3"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:weightSum="3"
+
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+
+                >
+                <TextView
+                    android:id="@+id/choose_foure__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:text="answer 4"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/button_confirm_to_solve_next_question"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/button_background_blue"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Next Question"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#FFFf"
+            android:drawableRight="@drawable/nexts"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

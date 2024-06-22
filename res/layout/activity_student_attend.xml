@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAttendActivity"
+    >
+
+    <EditText
+        android:id="@+id/edit_text_course_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_boxes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.70"
+        android:layout_marginStart="10dp"
+        android:hint="Generate course code"
+        android:paddingStart="10dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginTop="80dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Generate_course_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_circle"
+        app:backgroundTint="@color/primaryTextColor"
+        android:text="Generate \nCourse \ncode"
+        app:layout_constraintStart_toEndOf="@id/edit_text_course_code"
+        app:layout_constraintTop_toTopOf="@id/edit_text_course_code"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_course_code"
+        android:layout_marginStart="5dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/primaryTextColor"
+        android:layout_marginHorizontal="30dp"
+        android:text="Confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_course_code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
